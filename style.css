@@ -22,6 +22,7 @@ header{
     max-width: 100%;
     width: 115px;
     height: auto;
+    
 }
 .navmenu{
     display: flex;
@@ -199,4 +200,240 @@ section{
     width: 75px;
     height: auto;
     margin-bottom: 20px;
+}
+.row h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1d4c;
+    margin-bottom: 15px;
+}
+.row p{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+}
+.row:hover{
+    transform: translateY(-8px);
+
+}
+/* Sport-section */
+.main-dest{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    align-items: center;
+    gap: 2rem;
+
+}
+.hov-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all.42s;
+}
+.Dest-text h5{
+    font-size: 18px;
+    color: #5E6282;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+}
+.Dest-text h2{
+    color: #14183e;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+    text-align: center;
+    margin-bottom: 50px;
+}
+.box{
+    position: relative;
+}
+.box .text-in{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+.text-in h5{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.text-in p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.coun-text{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.box h6{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hov-img{
+    overflow: hidden;
+}
+.hov-img:hover img{
+    transform: scale(1.1);
+    filter: brightness(50%) hue-rotate(45deg);
+}
+.text-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.left h4{
+    color: #5E6282;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+.left h3{
+    color: #14183e;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+
+}
+.rights img{
+    max-width: 100%;
+    width: 70px;
+    height: 70px;
+}
+.rights h5{
+    color: #5E6282;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+.rights h6{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.rights p{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+/* Sponsoret */
+.air-office{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.office-name{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160, auto));
+    gap: 3rem;
+    align-items: center;
+}
+.office-name img{
+    max-width: 100%;
+    width: 170px;
+    height: auto;
+    transition: all .42s;
+}
+.office-name img:hover{
+    transform: translateY(-5px);
+}
+/* responsive design css */
+@media(max-width:1265px){
+    header{
+        padding: 25px 04%;
+        transition: .3s;
+    }
+    section{
+        padding: 60px 4%;
+        transition: .3s;
+    }
+}
+@media(max-width:1050px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 100%;
+        transition: .3s;
+    }
+    .home-text{
+        padding-top: 100px;
+        text-align: center;
+        transition: .3s;
+    }
+    .home-img img{
+        padding-top: 50px;
+        transition:.3s;
+    }
+    
+}
+@media(max-width:1180px){
+    .home-text h1{
+        font-size: 56px;
+        transition:.3s;
+    }
+    .home-text h4{
+        font-size: 18px;
+        transition:.3s;
+    }
+    .home-text p{
+        font-size: 15px;
+        transition:.3s;
+    }
+
+}
+@media(max-width:415px){
+    .home-text h1{
+        font-size: 40px;
+        line-height: 50px;
+        transition: .3s;
+    }
+    .home-text p{
+        font-size: 12px;
+        transition: .3s;
+    }
+}
+@media(max-width:1000px){
+    .test-text{
+        grid-template-columns: 1fr;
+        height: 100%;
+        transition: .3s;
+        text-align: center;
+    }
+}
+@media(max-width:970px){
+    #menu-icon{
+        display: block;
+    }
+    .navmenu{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #FFF1DA;
+        text-align: left;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        padding: 16px;
+        margin: 8px;
+        border-left: 2px solid #212832;
+    }
+    .navmenu.open{
+        top: 100%;
+
+    }
 }
